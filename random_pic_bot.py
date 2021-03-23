@@ -8,7 +8,8 @@ import random
 
 from telebot import types
 
-bot = telebot.TeleBot(picture.settings["token"])  # токен
+
+bot = telebot.TeleBot('TOKEN')  # токен
 array = picture.pic
 
 random_pic = lambda: random.choice(picture.pic)
