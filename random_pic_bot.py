@@ -1,5 +1,5 @@
 import telebot
-import picture
+import picture  #Local module
 import random
 
 from telebot import types
@@ -8,7 +8,7 @@ from telebot import types
 bot = telebot.TeleBot('TOKEN')  # токен
 array = picture.pic
 
-random_pic = lambda: random.choice(picture.pic)
+random_pic = lambda: random.choice(picture.pic) # A function that creates a random order of pictures in the list imported from the local module
 
 
 # Старт бота с приветствием и созданием кнопок:
